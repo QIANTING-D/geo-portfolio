@@ -1,0 +1,126 @@
+<!doctype html><html lang="zh"><head><meta charset="utf-8">
+<title>GEO 问题库测试 · 方法论报告</title>
+<style>
+*{box-sizing:border-box}
+body{font-family:Microsoft YaHei,'PingFang SC',sans-serif;margin:0;background:#f5f7fa;color:#1f2937}
+.wrap{max-width:1040px;margin:0 auto;padding:28px}
+h1{font-size:24px;margin:0 0 4px}
+.sub{color:#6b7280;font-size:13px;margin-bottom:18px}
+.kpis{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:22px}
+.card{background:#fff;border-radius:10px;padding:16px 18px;min-width:150px;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.k{font-size:26px;font-weight:700;color:#2563eb}
+.l{font-size:12px;color:#6b7280;margin-top:4px}
+.panel{background:#fff;border-radius:10px;padding:18px 20px;margin-bottom:18px;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.panel h2{font-size:16px;margin:0 0 12px;border-left:4px solid #2563eb;padding-left:10px}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th,td{padding:8px 10px;text-align:center;border-bottom:1px solid #eee}
+th{background:#f0f4ff;color:#374151}
+td.hi{color:#16a34a;font-weight:700}
+ul{line-height:1.9;font-size:14px}
+.note{font-size:12px;color:#9ca3af;margin-top:8px}
+</style></head><body><div class="wrap">
+<h1>GEO 提示词 / 问题库测试框架 · 方法论报告</h1>
+<div class="sub">行业：跨境电商 ｜ 目标品牌：安克（Anker） ｜ 数据源：真实大模型 API（DeepSeek / 豆包） ｜ 生成时间：2026-07-30 18:45</div>
+<div class="kpis"><div class='card'><div class='k'>16</div><div class='l'>测试样本（问×引擎）</div></div><div class='card'><div class='k'>8</div><div class='l'>意图类型</div></div><div class='card'><div class='k'>56.2%</div><div class='l'>安克 平均引用率</div></div><div class='card'><div class='k'>68.8%</div><div class='l'>内容结构化率</div></div></div>
+
+<div class="panel"><h2>一、各意图类型的「目标品牌引用率」对比</h2><svg viewBox="0 0 680 280" width="100%" style="font-family:Microsoft YaHei,sans-serif">
+<rect x="0" y="0" width="680" height="280" fill="#fff"/>
+<text x="0" y="28" font-size="13" fill="#1f2937">对比类</text>
+<rect x="120" y="12" width="440" height="18" rx="3" fill="#16a34a"/>
+<text x="566" y="26" font-size="12" fill="#111">100.0%</text>
+<text x="0" y="58" font-size="13" fill="#1f2937">购买推荐</text>
+<rect x="120" y="42" width="440" height="18" rx="3" fill="#16a34a"/>
+<text x="566" y="56" font-size="12" fill="#111">100.0%</text>
+<text x="0" y="88" font-size="13" fill="#1f2937">评测类</text>
+<rect x="120" y="72" width="440" height="18" rx="3" fill="#16a34a"/>
+<text x="566" y="86" font-size="12" fill="#111">100.0%</text>
+<text x="0" y="118" font-size="13" fill="#1f2937">教程类</text>
+<rect x="120" y="102" width="220" height="18" rx="3" fill="#16a34a"/>
+<text x="346" y="116" font-size="12" fill="#111">50.0%</text>
+<text x="0" y="148" font-size="13" fill="#1f2937">故障排查</text>
+<rect x="120" y="132" width="220" height="18" rx="3" fill="#16a34a"/>
+<text x="346" y="146" font-size="12" fill="#111">50.0%</text>
+<text x="0" y="178" font-size="13" fill="#1f2937">场景推荐</text>
+<rect x="120" y="162" width="220" height="18" rx="3" fill="#16a34a"/>
+<text x="346" y="176" font-size="12" fill="#111">50.0%</text>
+<text x="0" y="208" font-size="13" fill="#1f2937">定义类</text>
+<rect x="120" y="192" width="0" height="18" rx="3" fill="#16a34a"/>
+<text x="126" y="206" font-size="12" fill="#111">0.0%</text>
+<text x="0" y="238" font-size="13" fill="#1f2937">FAQ类</text>
+<rect x="120" y="222" width="0" height="18" rx="3" fill="#16a34a"/>
+<text x="126" y="236" font-size="12" fill="#111">0.0%</text>
+</svg>
+<div class="note">越高表示该意图下 AI 越可能在回答中提及 安克。</div></div>
+
+<div class="panel"><h2>二、内容结构化率（列表+表格）对比</h2><svg viewBox="0 0 680 280" width="100%" style="font-family:Microsoft YaHei,sans-serif">
+<rect x="0" y="0" width="680" height="280" fill="#fff"/>
+<text x="0" y="28" font-size="13" fill="#1f2937">定义类</text>
+<rect x="120" y="12" width="440" height="18" rx="3" fill="#2563eb"/>
+<text x="566" y="26" font-size="12" fill="#111">100.0%</text>
+<text x="0" y="58" font-size="13" fill="#1f2937">对比类</text>
+<rect x="120" y="42" width="330" height="18" rx="3" fill="#2563eb"/>
+<text x="456" y="56" font-size="12" fill="#111">75.0%</text>
+<text x="0" y="88" font-size="13" fill="#1f2937">购买推荐</text>
+<rect x="120" y="72" width="330" height="18" rx="3" fill="#2563eb"/>
+<text x="456" y="86" font-size="12" fill="#111">75.0%</text>
+<text x="0" y="118" font-size="13" fill="#1f2937">FAQ类</text>
+<rect x="120" y="102" width="330" height="18" rx="3" fill="#2563eb"/>
+<text x="456" y="116" font-size="12" fill="#111">75.0%</text>
+<text x="0" y="148" font-size="13" fill="#1f2937">故障排查</text>
+<rect x="120" y="132" width="330" height="18" rx="3" fill="#2563eb"/>
+<text x="456" y="146" font-size="12" fill="#111">75.0%</text>
+<text x="0" y="178" font-size="13" fill="#1f2937">场景推荐</text>
+<rect x="120" y="162" width="330" height="18" rx="3" fill="#2563eb"/>
+<text x="456" y="176" font-size="12" fill="#111">75.0%</text>
+<text x="0" y="208" font-size="13" fill="#1f2937">评测类</text>
+<rect x="120" y="192" width="220" height="18" rx="3" fill="#2563eb"/>
+<text x="346" y="206" font-size="12" fill="#111">50.0%</text>
+<text x="0" y="238" font-size="13" fill="#1f2937">教程类</text>
+<rect x="120" y="222" width="110" height="18" rx="3" fill="#2563eb"/>
+<text x="236" y="236" font-size="12" fill="#111">25.0%</text>
+</svg>
+<div class="note">结构化内容更易被 AI 检索、切片与引用。</div></div>
+
+<div class="panel"><h2>三、明确推荐率对比</h2><svg viewBox="0 0 680 280" width="100%" style="font-family:Microsoft YaHei,sans-serif">
+<rect x="0" y="0" width="680" height="280" fill="#fff"/>
+<text x="0" y="28" font-size="13" fill="#1f2937">对比类</text>
+<rect x="120" y="12" width="440" height="18" rx="3" fill="#f59e0b"/>
+<text x="566" y="26" font-size="12" fill="#111">100.0%</text>
+<text x="0" y="58" font-size="13" fill="#1f2937">购买推荐</text>
+<rect x="120" y="42" width="440" height="18" rx="3" fill="#f59e0b"/>
+<text x="566" y="56" font-size="12" fill="#111">100.0%</text>
+<text x="0" y="88" font-size="13" fill="#1f2937">评测类</text>
+<rect x="120" y="72" width="440" height="18" rx="3" fill="#f59e0b"/>
+<text x="566" y="86" font-size="12" fill="#111">100.0%</text>
+<text x="0" y="118" font-size="13" fill="#1f2937">教程类</text>
+<rect x="120" y="102" width="220" height="18" rx="3" fill="#f59e0b"/>
+<text x="346" y="116" font-size="12" fill="#111">50.0%</text>
+<text x="0" y="148" font-size="13" fill="#1f2937">故障排查</text>
+<rect x="120" y="132" width="0" height="18" rx="3" fill="#f59e0b"/>
+<text x="126" y="146" font-size="12" fill="#111">0.0%</text>
+<text x="0" y="178" font-size="13" fill="#1f2937">场景推荐</text>
+<rect x="120" y="162" width="440" height="18" rx="3" fill="#f59e0b"/>
+<text x="566" y="176" font-size="12" fill="#111">100.0%</text>
+<text x="0" y="208" font-size="13" fill="#1f2937">定义类</text>
+<rect x="120" y="192" width="440" height="18" rx="3" fill="#f59e0b"/>
+<text x="566" y="206" font-size="12" fill="#111">100.0%</text>
+<text x="0" y="238" font-size="13" fill="#1f2937">FAQ类</text>
+<rect x="120" y="222" width="220" height="18" rx="3" fill="#f59e0b"/>
+<text x="346" y="236" font-size="12" fill="#111">50.0%</text>
+</svg>
+<div class="note">「敢下结论、敢点名品牌」的回答，引用率显著更高。</div></div>
+
+<div class="panel"><h2>四、意图 × 全维度指标明细</h2>
+<table><tr><th>意图类型</th><th>样本</th><th>目标引用</th><th>任意品牌</th><th>列表</th><th>表格</th><th>含数据</th><th>带链接</th><th>推荐率</th><th>平均字数</th></tr>
+<tr><td>对比类</td><td>2</td><td class='hi'>100.0%</td><td>100.0%</td><td>50.0%</td><td>100.0%</td><td>100.0%</td><td>0.0%</td><td>100.0%</td><td>804</td></tr><tr><td>购买推荐</td><td>2</td><td class='hi'>100.0%</td><td>100.0%</td><td>50.0%</td><td>100.0%</td><td>100.0%</td><td>0.0%</td><td>100.0%</td><td>888</td></tr><tr><td>评测类</td><td>2</td><td class='hi'>100.0%</td><td>100.0%</td><td>50.0%</td><td>50.0%</td><td>100.0%</td><td>0.0%</td><td>100.0%</td><td>526</td></tr><tr><td>教程类</td><td>2</td><td class='hi'>50.0%</td><td>50.0%</td><td>50.0%</td><td>0.0%</td><td>50.0%</td><td>0.0%</td><td>50.0%</td><td>490</td></tr><tr><td>故障排查</td><td>2</td><td class='hi'>50.0%</td><td>50.0%</td><td>100.0%</td><td>50.0%</td><td>100.0%</td><td>0.0%</td><td>0.0%</td><td>810</td></tr><tr><td>场景推荐</td><td>2</td><td class='hi'>50.0%</td><td>100.0%</td><td>100.0%</td><td>50.0%</td><td>100.0%</td><td>0.0%</td><td>100.0%</td><td>834</td></tr><tr><td>定义类</td><td>2</td><td class='hi'>0.0%</td><td>0.0%</td><td>100.0%</td><td>100.0%</td><td>100.0%</td><td>0.0%</td><td>100.0%</td><td>592</td></tr><tr><td>FAQ类</td><td>2</td><td class='hi'>0.0%</td><td>0.0%</td><td>100.0%</td><td>50.0%</td><td>100.0%</td><td>0.0%</td><td>50.0%</td><td>570</td></tr></table></div>
+
+<div class="panel"><h2>五、方法论结论（沉淀）</h2><ul><li>在「安克（Anker）」相关的 8 类高频问题中，平均目标品牌引用率为 <b>56.2%</b>，内容结构化率平均 <b>68.8%</b>。</li><li><b>最易被 AI 引用品牌的意图类型：对比类（100.0%）、购买推荐（100.0%）、评测类（100.0%）</b>——带明确选购/比较意图的问题，模型更倾向给出品牌清单与推荐结论。</li><li><b>结构化率最高的意图类型：定义类（100.0%）</b>——教程/对比类问题模型天然倾向用列表/表格作答，这类内容更易被检索与引用。</li><li>明确给出「推荐结论」的意图类型（5 类）平均品牌引用率高达 <b>70.0%</b>，远高于不推荐的 FAQ/故障类——<b>「敢下结论、敢点名品牌」的内容，AI 更爱引。</b></li><li>方法论提炼：<b>「强意图 + 结构化 + 点名品牌 + 给数据/来源」</b>四类特征是 GEO 高可见度的共同信号；纯科普/答疑类（定义、FAQ、故障）天然低引用，应通过内嵌「选购建议」与「品牌对比」模块主动制造引用锚点。</li></ul></div>
+
+<div class="panel"><h2>六、可交付：内容优化清单（GEO 运营动作）</h2>
+<ul>
+<li><b>购买推荐 / 对比 / 评测类</b>：已是高引用区，应保持「品牌清单 + 一句话理由 + 推荐结论」结构。</li>
+<li><b>教程 / 场景类</b>：结构化率高但品牌引用偏低，需在步骤末尾增加「对应产品推荐」模块。</li>
+<li><b>定义 / FAQ / 故障类</b>：天然低引用，须主动内嵌「选购建议」「品牌对比」锚点，制造被引机会。</li>
+<li><b>通用规则</b>：用列表/表格呈现参数；给出具体数字（mAh/W/时长）；在合适处点名品牌并附来源链接。</li>
+</ul></div>
+</div></body></html>
