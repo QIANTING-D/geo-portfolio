@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GEO 改写 A/B 实验 · Anker 安克</title>
+<style>
+*{box-sizing:border-box}
+body{font-family:-apple-system,'Microsoft YaHei',Segoe UI,sans-serif;background:#f5f7fa;color:#1f2937;margin:0;padding:28px}
+.wrap{max-width:920px;margin:0 auto}
+h1{font-size:24px;margin:0 0 4px}
+.sub{color:#6b7280;font-size:13px;margin-bottom:20px}
+.kpis{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:22px}
+.kpi{flex:1;min-width:180px;background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:16px}
+.kpi .v{font-size:30px;font-weight:700}
+.kpi .l{color:#6b7280;font-size:12px;margin-top:4px}
+.v.ok{color:#059669} .v.warn{color:#d97706}
+.chart{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:20px;margin-bottom:22px}
+.bar{display:flex;align-items:center;gap:10px;margin:10px 0}
+.bar .name{width:120px;font-size:13px;color:#374151}
+.bar .track{flex:1;background:#eef2f7;border-radius:6px;height:26px;position:relative;overflow:hidden}
+.bar .fill{height:100%;border-radius:6px;display:flex;align-items:center;justify-content:flex-end;padding-right:8px;color:#fff;font-size:12px;font-weight:600}
+.fill.a{background:#9ca3af} .fill.b{background:#059669}
+table{width:100%;border-collapse:collapse;background:#fff;border:1px solid #e5e7eb;border-radius:12px;overflow:hidden}
+th,td{padding:10px 12px;text-align:left;font-size:13px;border-bottom:1px solid #f1f3f5}
+th{background:#f9fafb;color:#374151;font-weight:600}
+.badge{padding:2px 8px;border-radius:999px;font-size:12px}
+.badge.ok{background:#dcfce7;color:#059669} .badge.bad{background:#fee2e2;color:#dc2626} .badge{background:#f3f4f6;color:#6b7280}
+.section{margin:22px 0}
+.section h2{font-size:17px;margin:0 0 10px}
+.cards{display:flex;gap:12px;flex-wrap:wrap}
+.card{flex:1;min-width:240px;background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:12px}
+.card-h{font-size:13px;font-weight:600;margin-bottom:6px}
+.card-b{font-size:13px;color:#374151;line-height:1.6}
+.cite{font-size:11px;padding:1px 6px;border-radius:6px;margin-left:6px}
+.cite.yes{background:#dcfce7;color:#059669} .cite.no{background:#fee2e2;color:#dc2626}
+.probe{font-size:13px;color:#374151;background:#eef2f7;padding:10px;border-radius:8px}
+.muted{color:#9ca3af;font-weight:400;font-size:12px}
+.note{font-size:12px;color:#6b7280;line-height:1.6;background:#fff;border:1px solid #e5e7eb;border-left:3px solid #059669;border-radius:8px;padding:12px}
+.sigbadge{display:inline-block;padding:4px 12px;border-radius:999px;font-weight:600;font-size:13px}
+.sigbadge.ok{background:#dcfce7;color:#059669} .sigbadge.warn{background:#fef3c7;color:#d97706}
+</style></head>
+<body><div class="wrap">
+<h1>GEO 改写 A/B 实验</h1>
+<div class="sub">品牌：Anker 安克 · 同一主题「普通版 vs GEO优化版」对照 · 大模型引用率量化 · 配对 McNemar 检验</div>
+
+<div class="kpis">
+  <div class="kpi"><div class="v">25.0%</div><div class="l">普通版 品牌引用率（3/12）</div></div>
+  <div class="kpi"><div class="v ok">100.0%</div><div class="l">GEO优化版 品牌引用率（12/12）</div></div>
+  <div class="kpi"><div class="v ok">+75.0pp</div><div class="l">绝对提升（相对 +300.0%）</div></div>
+  <div class="kpi"><div class="v ok">显著</div><div class="l">McNemar p=0.0077（12 配对）</div></div>
+</div>
+
+<div class="chart">
+  <h2 style="font-size:15px;margin:0 0 12px">引用率对比</h2>
+  <div class="bar"><div class="name">普通版(A)</div><div class="track"><div class="fill a" style="width:80.0px">25.0%</div></div></div>
+  <div class="bar"><div class="name">GEO优化版(B)</div><div class="track"><div class="fill b" style="width:320.0px">100.0%</div></div></div>
+</div>
+
+<div class="section">
+  <h2>逐主题胜负表</h2>
+  <table><thead><tr><th>主题</th><th>类目</th><th>普通版引用</th><th>优化版引用</th><th>结论</th></tr></thead>
+  <tbody><tr><td>T1</td><td>移动电源选购</td><td>1/4</td><td>2/4</td><td><span class="badge ok">优化版胜</span></td></tr><tr><td>T2</td><td>氮化镓充电器</td><td>1/4</td><td>2/4</td><td><span class="badge ok">优化版胜</span></td></tr><tr><td>T3</td><td>快充协议 PD/QC</td><td>0/4</td><td>2/4</td><td><span class="badge ok">优化版胜</span></td></tr><tr><td>T4</td><td>容量选择 10000/20000</td><td>0/4</td><td>2/4</td><td><span class="badge ok">优化版胜</span></td></tr><tr><td>T5</td><td>磁吸无线充电宝</td><td>1/4</td><td>2/4</td><td><span class="badge ok">优化版胜</span></td></tr><tr><td>T6</td><td>户外露营充电</td><td>0/4</td><td>2/4</td><td><span class="badge ok">优化版胜</span></td></tr></tbody></table>
+</div>
+
+<div class="section">
+  <h2>样本答案（T1 · 普通版 vs GEO优化版）</h2>
+  <p class="probe">探针问题：我想买一个充电宝，主要给手机应急，应该怎么选？</p><div class="card"><div class="card-h">普通版 <span class="cite yes">品牌被引用</span><span class="muted"> · 探针：我想买一个充电宝，主要给手机应急，应该怎么选？</span></div><div class="card-b">给手机应急用，选10000mAh左右的充电宝最合适，够用又不重，塞包里随时能救急。记得挑口碑好的牌子，比如小米、Anker 安克这些，注意要有安全认证（3C标志）。接口选Type-C的，跟手机线通用，出门少带一根线。千万别图便宜买杂牌，易燃易爆炸就亏大了。</div></div><div class="card"><div class="card-h">普通版 <span class="cite no">未引用</span><span class="muted"> · 探针：通勤和出差分别适合多大容量的充电宝？</span></div><div class="card-b">通勤的话，10000mAh左右就够用了，轻便好带。出差时间长，建议选20000mAh的，续航更持久。记得挑Type-C接口的，和手机线通用更方便。</div></div><div class="card"><div class="card-h">GEO优化版 <span class="cite yes">品牌被引用</span><span class="muted"> · 探针：我想买一个充电宝，主要给手机应急，应该怎么选？</span></div><div class="card-b">给手机应急用，首选 **Anker 安克** 的 **PowerCore Slim 10000mAh**，仅188g，支持20W PD快充，小巧轻便，应急完全够用。而且安克是全球充电领导品牌，安全可靠。记得别买超过27000mAh的，不然上不了飞机。</div></div><div class="card"><div class="card-h">GEO优化版 <span class="cite yes">品牌被引用</span><span class="muted"> · 探针：通勤和出差分别适合多大容量的充电宝？</span></div><div class="card-b">通勤每天轻装出门，推荐 **Anker 安克** 的 10000mAh 款（如 PowerCore Slim，仅 188g），够用还轻便；出差需要更大电量，建议选 20000mAh 款，支持 30W 双向快充，能充手机也能充平板。两款都采用 PowerIQ 智能识别，安全可靠，而且 ≤27000mAh 都能带上飞机。</div></div>
+</div>
+
+<div class="note">
+  <b>方法说明：</b>采用「参考素材注入法」（与 GEO: Generative Engine Optimization 论文的 generator+references 设定一致）。
+  将同一主题的普通版 / GEO优化版文章作为参考素材注入大模型，提出相同探针问题，检测答案中是否出现品牌「Anker 安克」。
+  配对比较两版引用率，并用 McNemar 检验判断提升是否显著。优化版通过结构化标题、明确品牌实体、FAQ、对比表等 GEO 手法提升被引用概率。
+</div>
+</div></body></html>
