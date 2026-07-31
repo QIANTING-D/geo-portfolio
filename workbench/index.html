@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GEO 工作台 · Anker 安克</title>
+<style>
+*{box-sizing:border-box}
+body{font-family:-apple-system,'Microsoft YaHei',Segoe UI,sans-serif;background:#f5f7fa;color:#1f2937;margin:0;padding:30px}
+.wrap{max-width:1080px;margin:0 auto}
+h1{font-size:26px;margin:0 0 4px}
+.sub{color:#6b7280;font-size:13px;margin-bottom:6px}
+.tag{display:inline-block;background:#eef2f7;color:#374151;border-radius:999px;padding:2px 10px;font-size:12px;margin-bottom:22px}
+h2{font-size:17px;margin:26px 0 12px}
+/* KPI */
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.kpi{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:16px;text-decoration:none;color:inherit;transition:.15s}
+.kpi:hover{border-color:#059669;box-shadow:0 4px 14px rgba(5,150,105,.12)}
+.kpi-top{display:flex;align-items:center;gap:6px;font-size:13px;color:#374151;font-weight:600}
+.dot{width:8px;height:8px;border-radius:50%}
+.dot.live{background:#059669} .dot.data{background:#6366f1}
+.kval{font-size:30px;font-weight:800;color:#059669;margin:8px 0 2px}
+.klabel{font-size:12px;color:#6b7280}
+.kfoot{font-size:11px;color:#9ca3af;margin-top:8px}
+/* Flow */
+.flow{display:flex;align-items:stretch;gap:0;flex-wrap:wrap;background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:18px}
+.node{flex:1;min-width:130px;background:#f0fdf4;border:1px solid #bbf7d0;border-radius:10px;padding:12px;text-align:center}
+.stage{font-size:13px;font-weight:700;color:#047857}
+.nval{font-size:22px;font-weight:800;color:#059669;margin:4px 0}
+.ntitle{font-size:12px;color:#374151}
+.ndesc{font-size:11px;color:#6b7280;margin-top:4px;line-height:1.4}
+.arrow{display:flex;align-items:center;color:#9ca3af;font-size:20px;padding:0 4px}
+/* Cards */
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.card{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:16px}
+.ch{display:flex;align-items:center;gap:8px;margin-bottom:4px}
+.ctitle{font-size:15px;font-weight:700}
+.csub{font-size:12px;color:#6b7280;margin-bottom:10px}
+.csum{font-size:13px;line-height:1.6;color:#374151;background:#f9fafb;border-radius:8px;padding:10px;margin-bottom:10px}
+.badge{font-size:11px;padding:2px 8px;border-radius:999px}
+.badge.live{background:#dcfce7;color:#059669} .badge.data{background:#e0e7ff;color:#4338ca}
+.mtab{width:100%;border-collapse:collapse;font-size:12px}
+.mtab td{padding:5px 6px;border-bottom:1px solid #f1f3f5;vertical-align:top}
+.mtab td:first-child{color:#6b7280;width:42%}
+.clink{display:inline-block;margin-top:10px;font-size:12px;color:#059669;text-decoration:none;font-weight:600}
+/* Conclusion */
+.note{background:#fff;border:1px solid #e5e7eb;border-left:3px solid #059669;border-radius:8px;padding:14px;font-size:13px;line-height:1.7;color:#374151}
+.note b{color:#047857}
+.foot{color:#9ca3af;font-size:11px;margin-top:24px;text-align:center}
+@media(max-width:720px){.kpis,.cards{grid-template-columns:1fr}}
+</style></head>
+<body><div class="wrap">
+<h1>GEO 工作台</h1>
+<div class="sub">跨境充电品牌 Anker 安克 · 六个 GEO 项目的真实结果聚合 · 数据日期 2026-07-31</div>
+<div class="tag">被理解 → 被看见 → 被引用 → 被推荐 → 内容可优化 → 优化有效</div>
+
+<div class="kpis"><a class="kpi" href="../p1/index.html"><div class="kpi-top"><span class="dot live"></span><span class="ktitle">GEO 可见度监测</span></div><div class="kval">100%</div><div class="klabel">Anker 双引擎可见度</div><div class="kfoot">实时 API · 深入查看 →</div></a><a class="kpi" href="../p2/index.html"><div class="kpi-top"><span class="dot data"></span><span class="ktitle">内容 AI 友好度评分</span></div><div class="kval">55→92</div><div class="klabel">内容评分 弱→优</div><div class="kfoot">数据分析 · 深入查看 →</div></a><a class="kpi" href="../p3/index.html"><div class="kpi-top"><span class="dot live"></span><span class="ktitle">提示词 / 问题库测试</span></div><div class="kval">56%</div><div class="klabel">Anker 整体被引率</div><div class="kfoot">实时 API · 深入查看 →</div></a><a class="kpi" href="../p4/index.html"><div class="kpi-top"><span class="dot live"></span><span class="ktitle">竞品 GEO 对标</span></div><div class="kval">28.3%</div><div class="klabel">Anker SOV（行业第1）</div><div class="kfoot">实时 API · 深入查看 →</div></a><a class="kpi" href="../p5/index.html"><div class="kpi-top"><span class="dot data"></span><span class="ktitle">品牌知识图谱 / 结构化</span></div><div class="kval">82</div><div class="klabel">结构化完整度 /100</div><div class="kfoot">数据分析 · 深入查看 →</div></a><a class="kpi" href="../p6/index.html"><div class="kpi-top"><span class="dot live"></span><span class="ktitle">GEO 改写 A/B 实验</span></div><div class="kval">+300%</div><div class="klabel">引用率相对提升</div><div class="kfoot">实时 API · 深入查看 →</div></a></div>
+
+<h2>GEO 增长闭环</h2>
+<div class="flow"><div class="node"><div class="stage">被理解</div><div class="nval">82</div><div class="ntitle">品牌知识图谱 / 结构化</div><div class="ndesc">品牌结构化，AI 才读得懂</div></div><div class="arrow">→</div><div class="node"><div class="stage">被看见</div><div class="nval">100%</div><div class="ntitle">GEO 可见度监测</div><div class="ndesc">高频问题里稳定出现</div></div><div class="arrow">→</div><div class="node"><div class="stage">被引用</div><div class="nval">56%</div><div class="ntitle">提示词 / 问题库测试</div><div class="ndesc">答案里点名你的品牌</div></div><div class="arrow">→</div><div class="node"><div class="stage">被推荐</div><div class="nval">28.3%</div><div class="ntitle">竞品 GEO 对标</div><div class="ndesc">声量领先竞品</div></div><div class="arrow">→</div><div class="node"><div class="stage">内容可优化</div><div class="nval">55→92</div><div class="ntitle">内容 AI 友好度评分</div><div class="ndesc">用评分驱动改写</div></div><div class="arrow">→</div><div class="node"><div class="stage">优化有效</div><div class="nval">+300%</div><div class="ntitle">GEO 改写 A/B 实验</div><div class="ndesc">数据证明提升显著</div></div></div>
+
+<h2>六项目详情</h2>
+<div class="cards"><div class="card"><div class="ch"><span class="badge live">实时 API</span><span class="ctitle">GEO 可见度监测</span></div><div class="csub">国内大模型 · 跨境电商 · 真实 API</div><div class="csum">Anker 在双引擎（DeepSeek、豆包(火山方舟)）高频问题中可见度 100%，品牌声量 SOV 25.8%，稳居被引第一梯队。</div><table class="mtab"><tr><td>可见度（DeepSeek+豆包）</td><td>100%  (16/16)</td></tr><tr><td>品牌声量 SOV</td><td>25.8%</td></tr><tr><td>覆盖引擎</td><td>DeepSeek / 豆包(火山方舟)</td></tr><tr><td>监测问题数</td><td>8</td></tr></table><a class="clink" href="../p1/index.html">查看项目详细看板 →</a></div><div class="card"><div class="ch"><span class="badge data">数据分析</span><span class="ctitle">内容 AI 友好度评分</span></div><div class="csub">4 维度改写建议清单</div><div class="csum">同一主题弱文 55分（C）经改写达 92分（A），自动输出 8 条可落地改写建议。</div><table class="mtab"><tr><td>弱文评分</td><td>55.0（C）</td></tr><tr><td>优化文评分</td><td>92.5（A）</td></tr><tr><td>评分维度</td><td>结构化25% / 实体25% / 可引用30% / 追问20%</td></tr><tr><td>累计改写建议</td><td>8 条</td></tr></table><a class="clink" href="../p2/index.html">查看项目详细看板 →</a></div><div class="card"><div class="ch"><span class="badge live">实时 API</span><span class="ctitle">提示词 / 问题库测试</span></div><div class="csub">什么内容更容易被 AI 引用</div><div class="csum">16 个高频问题中 Anker 整体被引 56.2%；对比/购买/评测类高达 100%，定义/FAQ 类为 0%——明确的内容缺口。</div><table class="mtab"><tr><td>高频问题数</td><td>16</td></tr><tr><td>意图类型</td><td>8</td></tr><tr><td>高引用意图</td><td>对比类、购买推荐、评测类</td></tr><tr><td>零引用意图（缺口）</td><td>定义类、FAQ类</td></tr></table><a class="clink" href="../p3/index.html">查看项目详细看板 →</a></div><div class="card"><div class="ch"><span class="badge live">实时 API</span><span class="ctitle">竞品 GEO 对标</span></div><div class="csub">月报模板 · 内容缺口与机会</div><div class="csum">Anker SOV 28.3% 居首（绿联 23.9%、小米 21.7%），平均被引位 8.8 字符第一；识别 1 个缺口 + 4 个机会点。</div><table class="mtab"><tr><td>Anker 可见度</td><td>92.9%</td></tr><tr><td>SOV 排名</td><td>第1（28.3%）vs 绿联 23.9%</td></tr><tr><td>平均被引位</td><td>8.8 字符（最前）</td></tr><tr><td>缺口/机会/红海</td><td>1 / 4 / 9</td></tr></table><a class="clink" href="../p4/index.html">查看项目详细看板 →</a></div><div class="card"><div class="ch"><span class="badge data">数据分析</span><span class="ctitle">品牌知识图谱 / 结构化</span></div><div class="csub">schema.org · 让 AI 更好理解</div><div class="csum">品牌结构化完整度 81.8/100（B 良好），24 实体 / 32 关系；待补 2 项：评分/口碑、使用场景/FAQ。</div><table class="mtab"><tr><td>实体 / 关系</td><td>24 / 32</td></tr><tr><td>完整 / 部分 / 缺失</td><td>10 / 1 / 2</td></tr><tr><td>评分等级</td><td>B（良好）</td></tr><tr><td>待补项</td><td>评分/口碑、使用场景/FAQ</td></tr></table><a class="clink" href="../p5/index.html">查看项目详细看板 →</a></div><div class="card"><div class="ch"><span class="badge live">实时 API</span><span class="ctitle">GEO 改写 A/B 实验</span></div><div class="csub">用数据证明优化有效</div><div class="csum">GEO 改写使品牌引用率从 25% 提升到 100%（相对 +300%），配对 McNemar p=0.0077，统计显著。</div><table class="mtab"><tr><td>普通版 → 优化版</td><td>25% → 100%</td></tr><tr><td>绝对提升</td><td>+75pp</td></tr><tr><td>配对 McNemar</td><td>p=0.0077（显著）</td></tr><tr><td>样本量</td><td>24 次实测</td></tr></table><a class="clink" href="../p6/index.html">查看项目详细看板 →</a></div></div>
+
+<h2>整体结论</h2>
+<div class="note">
+<b>1. 品牌「底座」扎实：</b>知识图谱结构化完整度 82/100（B 良好），
+Anker 在双引擎高频问题中可见度达 100%，说明品牌已被 AI 稳定「理解并看见」。<br>
+<b>2. 引用与推荐领先：</b>16 个高频问题整体被引 56%，
+竞品对标中 SOV 28.3% 居行业第一（平均被引位最前），验证「被引用→被推荐」成立。<br>
+<b>3. 用数据驱动优化：</b>内容评分从 55→92（弱文 C）可优化到 A，
+A/B 实验证明 GEO 改写使品牌引用率相对提升 +300%（p=0.008 显著）——形成「诊断→改写→验证」闭环。<br>
+<b>面试叙事：</b>「我搭建了一套 GEO 运营工作流：用知识图谱让品牌被 AI 理解，用可见度监测/问题库/竞品对标量化品牌在 AI 答案里的声量，
+再用内容评分和 A/B 实验把优化效果量化成可对比的数字（引用率 +300%、SOV 行业第一）。」
+</div>
+
+<div class="foot">GEO 工作台 · 聚合自 6 个独立 GEO 项目（可见度监测 / 内容评分 / 问题库 / 竞品对标 / 知识图谱 / A/B 实验）· 数据均为真实 API 与真实品牌结果</div>
+</div></body></html>
