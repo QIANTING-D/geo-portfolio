@@ -1,0 +1,61 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GEO 内容 AI 友好度评分报告</title><style>
+* { box-sizing: border-box; }
+body { margin:0; font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif;
+       background:#f5f7fa; color:#1f2933; }
+.wrap { max-width:1080px; margin:0 auto; padding:24px 20px 60px; }
+header { border-bottom:3px solid #2563eb; padding-bottom:12px; margin-bottom:20px; }
+header h1 { font-size:22px; margin:0 0 4px; }
+header .sub { color:#52606d; font-size:13px; }
+.cards { display:flex; flex-wrap:wrap; gap:12px; margin:18px 0 26px; }
+.card { flex:1 1 160px; background:#fff; border:1px solid #e4e7eb; border-radius:10px;
+        padding:14px 16px; box-shadow:0 1px 2px rgba(0,0,0,.04); }
+.card .k { font-size:26px; font-weight:700; color:#2563eb; }
+.card .l { font-size:12px; color:#616e7c; margin-top:4px; }
+section { background:#fff; border:1px solid #e4e7eb; border-radius:10px;
+          padding:16px 18px; margin-bottom:20px; box-shadow:0 1px 2px rgba(0,0,0,.04); }
+section h2 { font-size:15px; margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid #eef1f4; }
+table { border-collapse:collapse; width:100%; font-size:13px; }
+th, td { border:1px solid #e4e7eb; padding:6px 8px; text-align:center; }
+th { background:#f0f4ff; color:#3e4c59; }
+td.q { text-align:left; color:#3e4c59; background:#fafbfc; }
+.bar-row { display:flex; align-items:center; gap:10px; margin:8px 0; font-size:13px; }
+.bar-name { width:120px; text-align:right; color:#3e4c59; }
+.bar-track { flex:1; background:#eef1f4; border-radius:6px; height:18px; overflow:hidden; }
+.bar-fill { height:100%; border-radius:6px; }
+.bar-val { width:54px; color:#52606d; font-variant-numeric:tabular-nums; }
+.sug { text-align:left; }
+.sug .sev { display:inline-block; border-radius:4px; padding:1px 7px; font-size:11px; color:#fff; }
+.sev-高 { background:#dc2626; } .sev-中 { background:#f59e0b; } .sev-低 { background:#0891b2; }
+.sug code { display:block; margin-top:4px; background:#f6f8fa; border:1px solid #e4e7eb;
+            border-radius:6px; padding:6px 8px; font-size:12px; white-space:pre-wrap; color:#334155; }
+.note { font-size:12px; color:#616e7c; line-height:1.7; }
+.tag { display:inline-block; background:#eef2ff; color:#3730a3; border-radius:4px;
+       padding:1px 7px; font-size:11px; margin-left:6px; }
+footer { color:#9aa5b1; font-size:12px; text-align:center; margin-top:30px; }
+</style></head>
+<body><div class="wrap">
+<header>
+  <h1>GEO 内容 AI 友好度评分报告</h1>
+  <div class="sub">评分品牌：安克（Anker）｜ 维度权重：结构化 25% / 实体 25% / 引用 30% / 追问 20% ｜ 生成时间：2026-07-30 17:39</div>
+</header>
+<div class="cards"><div class='card'><div class='k'>73.8</div><div class='l'>平均综合得分</div></div><div class='card'><div class='k'>2</div><div class='l'>评估文章数</div></div><div class='card'><div class='k'>8</div><div class='l'>改写建议条数</div></div><div class='card'><div class='k'>C</div><div class='l'>平均等级</div></div></div>
+<section><h2>文章评分对比</h2><table><tr><th>文章</th><th>综合分</th><th>等级</th><th>结构化数据</th><th>实体清晰</th><th>易被引用</th><th>覆盖常见追问</th></tr><tr><td class='q'>Anker 安克 65W 氮化镓充电器评测：小体积里的快充实力</td><td><b>55.0</b></td><td>C</td><td>45</td><td>80</td><td>56</td><td>35</td></tr><tr><td class='q'>Anker 安克 65W 氮化镓充电器 Anker-737 全面评测</td><td><b>92.5</b></td><td>A</td><td>100</td><td>100</td><td>85</td><td>85</td></tr></table></section>
+<section><h2>Anker 安克 65W 氮化镓充电器评测：小体积里的快充实力 <span class='tag'>综合 55.0 · 等级 C</span></h2><div class='note' style='margin-bottom:10px'>文件：sample_article.md</div><div class="bar-row"><div class="bar-name">结构化数据</div><div class="bar-track"><div class="bar-fill" style="width:45.0%;background:#2563eb"></div></div><div class="bar-val">45</div></div><div class="bar-row"><div class="bar-name">实体清晰</div><div class="bar-track"><div class="bar-fill" style="width:80.0%;background:#16a34a"></div></div><div class="bar-val">80</div></div><div class="bar-row"><div class="bar-name">易被引用</div><div class="bar-track"><div class="bar-fill" style="width:56.0%;background:#f59e0b"></div></div><div class="bar-val">56</div></div><div class="bar-row"><div class="bar-name">覆盖常见追问</div><div class="bar-track"><div class="bar-fill" style="width:35.0%;background:#db2777"></div></div><div class="bar-val">35</div></div><table><tr><th>严重度</th><th>维度</th><th>问题</th><th>改写建议 / 示例</th></tr><tr><td class='sug'><span class='sev sev-高'>高</span></td><td class='sug'>覆盖常见追问</td><td class='sug'>无 FAQ / 常见追问</td><td class='sug'>增加 FAQ 段落覆盖用户真实追问，是 AI 直接抽取答案的最高信号。<code>问：支持 MacBook 吗？
+答：65W 满足 13/14 寸满速充电。</code></td></tr><tr><td class='sug'><span class='sev sev-高'>高</span></td><td class='sug'>覆盖常见追问</td><td class='sug'>未覆盖教程意图</td><td class='sug'>补充「怎么用 / 如何设置」步骤，覆盖 how-to 类提问。<code>插上即充，支持 PD3.0/PPS，无需装驱动。</code></td></tr><tr><td class='sug'><span class='sev sev-高'>高</span></td><td class='sug'>覆盖常见追问</td><td class='sug'>未覆盖定义意图</td><td class='sug'>增加「是什么 / 背景」介绍，覆盖概念解释类提问。<code>氮化镓（GaN）是一种高效半导体材料。</code></td></tr><tr><td class='sug'><span class='sev sev-中'>中</span></td><td class='sug'>结构化数据</td><td class='sug'>缺少表格化参数</td><td class='sug'>把规格、对比、价格等成组数据做成 Markdown 表格，AI 抽取与引用成功率更高。<code>| 参数 | 数值 |
+| --- | --- |
+| 功率 | 65W |</code></td></tr><tr><td class='sug'><span class='sev sev-中'>中</span></td><td class='sug'>结构化数据</td><td class='sug'>缺少列表结构</td><td class='sug'>把要点、步骤、卖点改成项目符号列表，便于 AI 逐条引用。<code>- 支持 PD3.0 / PPS
+- 三口同时输出</code></td></tr><tr><td class='sug'><span class='sev sev-中'>中</span></td><td class='sug'>结构化数据</td><td class='sug'>无结构化数据标记（schema.org）</td><td class='sug'>为 FAQ / 参数加上 JSON-LD（FAQPage / Product），这是 AI 直接抓取问答的关键信号。<code>&lt;script type=&quot;application/ld+json&quot;&gt;
+{&quot;@type&quot;:&quot;FAQPage&quot;, ...}
+&lt;/script&gt;</code></td></tr><tr><td class='sug'><span class='sev sev-低'>低</span></td><td class='sug'>易被引用</td><td class='sug'>缺少一句话结论</td><td class='sug'>在文首/文末加一句可直接引用的结论（含推荐对象），AI 最爱摘这种句。<code>结论：多设备出差党，选 Anker 737 最稳。</code></td></tr><tr><td class='sug'><span class='sev sev-低'>低</span></td><td class='sug'>易被引用</td><td class='sug'>缺少可引用的短数据句</td><td class='sug'>把关键结论写成「数字 + 短句」（≤40字），如「0→50% 约 25 分钟」。<code>手机 0→50% 约 25 分钟。</code></td></tr></table></section><section><h2>Anker 安克 65W 氮化镓充电器 Anker-737 全面评测 <span class='tag'>综合 92.5 · 等级 A</span></h2><div class='note' style='margin-bottom:10px'>文件：sample_article_pro.md</div><div class="bar-row"><div class="bar-name">结构化数据</div><div class="bar-track"><div class="bar-fill" style="width:100.0%;background:#2563eb"></div></div><div class="bar-val">100</div></div><div class="bar-row"><div class="bar-name">实体清晰</div><div class="bar-track"><div class="bar-fill" style="width:100.0%;background:#16a34a"></div></div><div class="bar-val">100</div></div><div class="bar-row"><div class="bar-name">易被引用</div><div class="bar-track"><div class="bar-fill" style="width:85.0%;background:#f59e0b"></div></div><div class="bar-val">85</div></div><div class="bar-row"><div class="bar-name">覆盖常见追问</div><div class="bar-track"><div class="bar-fill" style="width:85.0%;background:#db2777"></div></div><div class="bar-val">85</div></div><div class="note">✅ 该维度均已达标，暂无需改写建议。</div></section>
+<section><h2>评分方法与交付说明</h2>
+  <div class="note">
+    · 四维评分（各 0–100）：<b>结构化数据</b>（标题层级/表格/列表/schema标记/段落长度）、<b>实体清晰</b>（品牌命名/参数规格/实体定义/型号/指代一致）、<b>易被引用</b>（结论句/短数据句/数据点/来源归属/可归因实体）、<b>覆盖常见追问</b>（FAQ/对比/教程/购买/定义意图）。<br>
+    · 综合分 = 四维加权求和；等级 A≥85 / B≥70 / C≥55 / D＜55。<br>
+    · 「改写建议清单」按严重度（高/中/低）+ 维度权重排序，可直接作为 GEO 运营交付物发给客户。<br>
+    · 替换为客户真实文章：把 .md 放进 <code>data/articles/</code> 后运行 <code>python run_all.py</code> 即可重新评分。
+  </div>
+</section>
+<footer>GEO 内容 AI 友好度评分器 · 让文章更容易被 AI 搜索引用</footer>
+</div></body></html>
