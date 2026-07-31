@@ -1,0 +1,500 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GEO 品牌知识图谱 · Anker</title>
+<style>
+*{box-sizing:border-box} body{font-family:'Microsoft YaHei',sans-serif;margin:0;background:#f8fafc;color:#1e293b}
+.header{background:linear-gradient(135deg,#0f172a,#1e3a8a);color:#fff;padding:26px 32px}
+.header h1{margin:0;font-size:22px} .header p{margin:6px 0 0;color:#cbd5e1;font-size:13px}
+.kpis{display:flex;gap:14px;padding:20px 32px;flex-wrap:wrap}
+.card{background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:16px 22px;min-width:150px}
+.card .k{font-size:28px;font-weight:800;color:#1e3a8a} .card .l{font-size:12px;color:#64748b;margin-top:4px}
+.section{background:#fff;margin:0 32px 22px;border:1px solid #e2e8f0;border-radius:12px;padding:20px 24px}
+.section h2{margin:0 0 14px;font-size:17px;border-left:4px solid #1e3a8a;padding-left:10px}
+.graph{overflow-x:auto;border:1px solid #e2e8f0;border-radius:8px;background:#fff}
+pre{background:#0f172a;color:#e2e8f0;padding:16px;border-radius:8px;overflow:auto;font-size:12px;max-height:420px;line-height:1.5}
+table{width:100%;border-collapse:collapse;font-size:13px} th,td{padding:9px 10px;border-bottom:1px solid #eef2f7;text-align:left}
+th{background:#f1f5f9;color:#475569;font-weight:600} td.num{text-align:right;font-variant-numeric:tabular-nums}
+.rec{display:flex;gap:12px;align-items:flex-start;padding:10px 0;border-bottom:1px solid #f1f5f9}
+.sev{color:#fff;font-size:12px;font-weight:700;padding:3px 10px;border-radius:20px;white-space:nowrap}
+.muted{color:#64748b;font-size:12px} .note{font-size:12px;color:#64748b;margin-top:10px;line-height:1.6}
+/* schema preview */
+.schemawrap{margin-top:6px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px}
+.schemacard{background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:12px 14px}
+.schemacard.org{background:#eef2ff;border-color:#c7d2fe}
+.sct{font-weight:700;font-size:14px;color:#1e3a8a;margin-bottom:8px}
+.ptag{font-size:11px;background:#dbeafe;color:#1e40af;padding:1px 7px;border-radius:10px;margin-left:6px;font-weight:600}
+.sctab{width:100%;border-collapse:collapse;font-size:12.5px}
+.sctab td{padding:3px 0;border-bottom:1px dashed #eef2f7;vertical-align:top}
+.sk{color:#64748b;width:34%;white-space:nowrap}
+.chips{margin-top:8px;display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.chip{background:#dbeafe;color:#1e40af;font-size:12px;padding:2px 9px;border-radius:20px}
+.awards{margin-top:12px;display:flex;gap:8px;flex-wrap:wrap}
+.award{background:#fff7ed;color:#c2410c;border:1px solid #fed7aa;font-size:13px;padding:5px 12px;border-radius:20px;font-weight:600}
+.gap{color:#dc2626;font-weight:700;background:#fef2f2;padding:1px 7px;border-radius:6px;font-size:12px}
+.raw{margin-top:14px}
+.raw summary{cursor:pointer;color:#1e3a8a;font-size:13px;font-weight:600}
+@media(max-width:720px){.grid{grid-template-columns:1fr}}
+</style></head><body>
+<div class="header"><h1>GEO 品牌知识图谱 / 结构化数据看板</h1>
+<p>目标品牌：安克（Anker） · 领域：跨境电商 · 充电储能 · 数据基准：2026-07-30（真实品牌事实）</p></div>
+<div class="kpis">
+<div class="card"><div class="k">24</div><div class="l">实体节点</div></div>
+<div class="card"><div class="k">32</div><div class="l">关系边</div></div>
+<div class="card"><div class="k">81.8</div><div class="l">GEO 结构化完整度</div></div>
+<div class="card"><div class="k">B · 良好</div><div class="l">等级</div></div>
+</div>
+<div class="section"><h2>一、品牌知识图谱（实体 - 关系结构）</h2>
+<div class="graph"><svg viewBox="0 0 1280 700" width="100%" preserveAspectRatio="xMinYMin meet" font-family="Microsoft YaHei, sans-serif">
+<line x1="145" y1="380" x2="455" y2="220" stroke="#cbd5e1" stroke-width="1.4"/>
+<text x="300" y="296" fill="#64748b" font-size="11" text-anchor="middle">拥有品牌</text>
+<line x1="145" y1="380" x2="455" y2="380" stroke="#cbd5e1" stroke-width="1.4"/>
+<text x="300" y="376" fill="#64748b" font-size="11" text-anchor="middle">拥有品牌</text>
+<line x1="145" y1="380" x2="455" y2="540" stroke="#cbd5e1" stroke-width="1.4"/>
+<text x="300" y="456" fill="#64748b" font-size="11" text-anchor="middle">拥有品牌</text>
+<line x1="145" y1="380" x2="225" y2="151" stroke="#cbd5e1" stroke-width="1.4"/>
+<text x="185" y="261" fill="#64748b" font-size="11" text-anchor="middle">创始人</text>
+<line x1="145" y1="380" x2="225" y2="242" stroke="#cbd5e1" stroke-width="1.4"/>
+<text x="185" y="307" fill="#64748b" font-size="11" text-anchor="middle">总部</text>
+<line x1="145" y1="380" x2="225" y2="334" stroke="#cbd5e1" stroke-width="1.4"/>
+<text x="185" y="353" fill="#64748b" font-size="11" text-anchor="middle">销售市场</text>
+<line x1="145" y1="380" x2="225" y2="425" stroke="#cbd5e1" stroke-width="1.4"/>
+<text x="185" y="398" fill="#64748b" font-size="11" text-anchor="middle">销售市场</text>
+<line x1="605" y1="220" x2="685" y2="188" stroke="#cbd5e1" stroke-width="1.4"/>
+<text x="645" y="200" fill="#64748b" font-size="11" text-anchor="middle">生产</text>
+<line x1="605" y1="220" x2="685" y2="316" stroke="#cbd5e1" stroke-width="1.4"/>
+<text x="645" y="264" fill="#64748b" font-size="11" text-anchor="middle">生产</text>
+<line x1="605" y1="220" x2="685" y2="444" stroke="#cbd5e1" stroke-width="1.4"/>
+<text x="645" y="328" fill="#64748b" font-size="11" text-anchor="middle">生产</text>
+<line x1="605" y1="220" x2="685" y2="572" stroke="#cbd5e1" stroke-width="1.4"/>
+<text x="645" y="392" fill="#64748b" font-size="11" text-anchor="middle">生产</text>
+<line x1="605" y1="220" x2="225" y2="517" stroke="#cbd5e1" stroke-width="1.4"/>
+<text x="415" y="364" fill="#64748b" font-size="11" text-anchor="middle">竞品</text>
+<line x1="605" y1="220" x2="225" y2="608" stroke="#cbd5e1" stroke-width="1.4"/>
+<text x="415" y="410" fill="#64748b" font-size="11" text-anchor="middle">竞品</text>
+<line x1="835" y1="188" x2="915" y2="118" stroke="#cbd5e1" stroke-width="1.4"/>
+<text x="875" y="149" fill="#64748b" font-size="11" text-anchor="middle">品类</text>
+<line x1="835" y1="316" x2="915" y2="176" stroke="#cbd5e1" stroke-width="1.4"/>
+<text x="875" y="242" fill="#64748b" font-size="11" text-anchor="middle">品类</text>
+<line x1="835" y1="572" x2="915" y2="176" stroke="#cbd5e1" stroke-width="1.4"/>
+<text x="875" y="370" fill="#64748b" font-size="11" text-anchor="middle">品类</text>
+<line x1="835" y1="188" x2="915" y2="350" stroke="#cbd5e1" stroke-width="1.4"/>
+<text x="875" y="265" fill="#64748b" font-size="11" text-anchor="middle">使用技术</text>
+<line x1="835" y1="316" x2="915" y2="409" stroke="#cbd5e1" stroke-width="1.4"/>
+<text x="875" y="358" fill="#64748b" font-size="11" text-anchor="middle">使用技术</text>
+<line x1="835" y1="444" x2="915" y2="350" stroke="#cbd5e1" stroke-width="1.4"/>
+<text x="875" y="393" fill="#64748b" font-size="11" text-anchor="middle">使用技术</text>
+<line x1="1065" y1="409" x2="915" y2="292" stroke="#cbd5e1" stroke-width="1.4"/>
+<text x="990" y="346" fill="#64748b" font-size="11" text-anchor="middle">基于</text>
+<line x1="835" y1="188" x2="915" y2="525" stroke="#cbd5e1" stroke-width="1.4"/>
+<text x="875" y="352" fill="#64748b" font-size="11" text-anchor="middle">型号</text>
+<line x1="835" y1="444" x2="915" y2="583" stroke="#cbd5e1" stroke-width="1.4"/>
+<text x="875" y="509" fill="#64748b" font-size="11" text-anchor="middle">型号</text>
+<line x1="835" y1="316" x2="915" y2="641" stroke="#cbd5e1" stroke-width="1.4"/>
+<text x="875" y="474" fill="#64748b" font-size="11" text-anchor="middle">型号</text>
+<line x1="835" y1="188" x2="915" y2="467" stroke="#cbd5e1" stroke-width="1.4"/>
+<text x="875" y="323" fill="#64748b" font-size="11" text-anchor="middle">获奖</text>
+<line x1="145" y1="380" x2="915" y2="467" stroke="#cbd5e1" stroke-width="1.4"/>
+<text x="530" y="419" fill="#64748b" font-size="11" text-anchor="middle">获奖</text>
+<line x1="1065" y1="118" x2="915" y2="176" stroke="#cbd5e1" stroke-width="1.4"/>
+<text x="990" y="143" fill="#64748b" font-size="11" text-anchor="middle">相关</text>
+<text x="150" y="384" fill="#94a3b8" font-size="10">成立: 2011</text>
+<text x="150" y="384" fill="#94a3b8" font-size="10">股票代码: 300866.SZ（深交所创业板，2020年</text>
+<text x="150" y="384" fill="#94a3b8" font-size="10">年营收: 305.14亿元（同比+23.49%）</text>
+<text x="1070" y="529" fill="#94a3b8" font-size="10">规格: 容量 26800mAh</text>
+<text x="1070" y="587" fill="#94a3b8" font-size="10">规格: 功率 160W 多口</text>
+<text x="1070" y="645" fill="#94a3b8" font-size="10">规格: 超小体积氮化镓</text>
+<g>
+<rect x="-5" y="357" width="150" height="46" rx="8" fill="#2563eb"/>
+<text x="70" y="378" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle">安克创新</text>
+<text x="70" y="394" fill="#e2e8f0" font-size="10" text-anchor="middle">Anker Innovations</text>
+</g>
+<g>
+<rect x="225" y="128" width="150" height="46" rx="8" fill="#7c3aed"/>
+<text x="300" y="149" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle">阳萌</text>
+<text x="300" y="165" fill="#e2e8f0" font-size="10" text-anchor="middle">Steven Yang</text>
+</g>
+<g>
+<rect x="225" y="219" width="150" height="46" rx="8" fill="#0891b2"/>
+<text x="300" y="240" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle">长沙</text>
+<text x="300" y="256" fill="#e2e8f0" font-size="10" text-anchor="middle">Changsha</text>
+</g>
+<g>
+<rect x="455" y="197" width="150" height="46" rx="8" fill="#16a34a"/>
+<text x="530" y="218" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle">Anker(充电储能)</text>
+<text x="530" y="234" fill="#e2e8f0" font-size="10" text-anchor="middle">Anker</text>
+</g>
+<g>
+<rect x="455" y="357" width="150" height="46" rx="8" fill="#16a34a"/>
+<text x="530" y="378" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle">eufy(智能创新)</text>
+<text x="530" y="394" fill="#e2e8f0" font-size="10" text-anchor="middle">eufy</text>
+</g>
+<g>
+<rect x="455" y="517" width="150" height="46" rx="8" fill="#16a34a"/>
+<text x="530" y="538" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle">声阔(智能影音)</text>
+<text x="530" y="554" fill="#e2e8f0" font-size="10" text-anchor="middle">soundcore</text>
+</g>
+<g>
+<rect x="915" y="95" width="150" height="46" rx="8" fill="#65a30d"/>
+<text x="990" y="116" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle">充电宝</text>
+<text x="990" y="132" fill="#e2e8f0" font-size="10" text-anchor="middle">Power Bank</text>
+</g>
+<g>
+<rect x="915" y="153" width="150" height="46" rx="8" fill="#65a30d"/>
+<text x="990" y="174" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle">充电器</text>
+<text x="990" y="190" fill="#e2e8f0" font-size="10" text-anchor="middle">Charger</text>
+</g>
+<g>
+<rect x="915" y="211" width="150" height="46" rx="8" fill="#65a30d"/>
+<text x="990" y="232" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle">数据线</text>
+<text x="990" y="248" fill="#e2e8f0" font-size="10" text-anchor="middle">Cable</text>
+</g>
+<g>
+<rect x="685" y="165" width="150" height="46" rx="8" fill="#ca8a04"/>
+<text x="760" y="186" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle">PowerCore 系列</text>
+<text x="760" y="202" fill="#e2e8f0" font-size="10" text-anchor="middle">PowerCore</text>
+</g>
+<g>
+<rect x="685" y="293" width="150" height="46" rx="8" fill="#ca8a04"/>
+<text x="760" y="314" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle">GaNPrime 系列</text>
+<text x="760" y="330" fill="#e2e8f0" font-size="10" text-anchor="middle">GaNPrime</text>
+</g>
+<g>
+<rect x="685" y="421" width="150" height="46" rx="8" fill="#ca8a04"/>
+<text x="760" y="442" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle">Prime 系列</text>
+<text x="760" y="458" fill="#e2e8f0" font-size="10" text-anchor="middle">Anker Prime</text>
+</g>
+<g>
+<rect x="685" y="549" width="150" height="46" rx="8" fill="#ca8a04"/>
+<text x="760" y="570" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle">MagGo 系列</text>
+<text x="760" y="586" fill="#e2e8f0" font-size="10" text-anchor="middle">MagGo</text>
+</g>
+<g>
+<rect x="915" y="269" width="150" height="46" rx="8" fill="#db2777"/>
+<text x="990" y="290" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle">氮化镓</text>
+<text x="990" y="306" fill="#e2e8f0" font-size="10" text-anchor="middle">GaN</text>
+</g>
+<g>
+<rect x="915" y="327" width="150" height="46" rx="8" fill="#db2777"/>
+<text x="990" y="348" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle">PowerIQ 快充技术</text>
+<text x="990" y="364" fill="#e2e8f0" font-size="10" text-anchor="middle">PowerIQ</text>
+</g>
+<g>
+<rect x="915" y="386" width="150" height="46" rx="8" fill="#db2777"/>
+<text x="990" y="407" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle">GaNPrime 技术</text>
+<text x="990" y="423" fill="#e2e8f0" font-size="10" text-anchor="middle">GaNPrime</text>
+</g>
+<g>
+<rect x="915" y="444" width="150" height="46" rx="8" fill="#ea580c"/>
+<text x="990" y="465" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle">红点设计奖</text>
+<text x="990" y="481" fill="#e2e8f0" font-size="10" text-anchor="middle">Red Dot Design Award</text>
+</g>
+<g>
+<rect x="915" y="502" width="150" height="46" rx="8" fill="#d97706"/>
+<text x="990" y="523" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle">PowerCore 2…</text>
+<text x="990" y="539" fill="#e2e8f0" font-size="10" text-anchor="middle">PowerCore 26800</text>
+</g>
+<g>
+<rect x="915" y="560" width="150" height="46" rx="8" fill="#d97706"/>
+<text x="990" y="581" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle">Prime 160W …</text>
+<text x="990" y="597" fill="#e2e8f0" font-size="10" text-anchor="middle">Prime 160W Charger</text>
+</g>
+<g>
+<rect x="915" y="618" width="150" height="46" rx="8" fill="#d97706"/>
+<text x="990" y="639" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle">Anker Nano …</text>
+<text x="990" y="655" fill="#e2e8f0" font-size="10" text-anchor="middle">Anker Nano</text>
+</g>
+<g>
+<rect x="225" y="311" width="150" height="46" rx="8" fill="#0891b2"/>
+<text x="300" y="332" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle">北美市场</text>
+<text x="300" y="348" fill="#e2e8f0" font-size="10" text-anchor="middle">North America</text>
+</g>
+<g>
+<rect x="225" y="402" width="150" height="46" rx="8" fill="#0891b2"/>
+<text x="300" y="423" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle">欧洲市场</text>
+<text x="300" y="439" fill="#e2e8f0" font-size="10" text-anchor="middle">Europe</text>
+</g>
+<g>
+<rect x="225" y="494" width="150" height="46" rx="8" fill="#dc2626"/>
+<text x="300" y="515" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle">绿联</text>
+<text x="300" y="531" fill="#e2e8f0" font-size="10" text-anchor="middle">UGREEN</text>
+</g>
+<g>
+<rect x="225" y="585" width="150" height="46" rx="8" fill="#dc2626"/>
+<text x="300" y="606" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle">倍思</text>
+<text x="300" y="622" fill="#e2e8f0" font-size="10" text-anchor="middle">Baseus</text>
+</g>
+<g font-size="11">
+<rect x="20" y="676" width="12" height="12" rx="3" fill="#2563eb"/>
+<text x="36" y="686" fill="#334155">组织</text>
+<rect x="170" y="676" width="12" height="12" rx="3" fill="#7c3aed"/>
+<text x="186" y="686" fill="#334155">人物</text>
+<rect x="320" y="676" width="12" height="12" rx="3" fill="#0891b2"/>
+<text x="336" y="686" fill="#334155">地点</text>
+<rect x="470" y="676" width="12" height="12" rx="3" fill="#0891b2"/>
+<text x="486" y="686" fill="#334155">市场</text>
+<rect x="620" y="676" width="12" height="12" rx="3" fill="#dc2626"/>
+<text x="636" y="686" fill="#334155">竞品</text>
+<rect x="770" y="676" width="12" height="12" rx="3" fill="#16a34a"/>
+<text x="786" y="686" fill="#334155">品牌</text>
+<rect x="20" y="676" width="12" height="12" rx="3" fill="#ca8a04"/>
+<text x="36" y="686" fill="#334155">产品系列</text>
+<rect x="170" y="676" width="12" height="12" rx="3" fill="#d97706"/>
+<text x="186" y="686" fill="#334155">具体产品</text>
+<rect x="320" y="676" width="12" height="12" rx="3" fill="#db2777"/>
+<text x="336" y="686" fill="#334155">技术</text>
+<rect x="470" y="676" width="12" height="12" rx="3" fill="#ea580c"/>
+<text x="486" y="686" fill="#334155">奖项</text>
+<rect x="620" y="676" width="12" height="12" rx="3" fill="#65a30d"/>
+<text x="636" y="686" fill="#334155">品类</text>
+</g>
+</svg></div>
+<div class="note">说明：蓝色节点为组织/品牌，绿色为子品牌，黄色为产品系列，橙色为具体产品，粉色为技术，红色为竞品。连线标注关系类型（生产/品类/使用技术/竞品等）。</div>
+</div>
+<div class="section"><h2>二、schema.org 结构化数据（JSON-LD · 可直接嵌入官网 &lt;head&gt;）</h2>
+<div class="schemawrap"><div class="schemacard org"><div class="sct">组织 · Organization</div><table class="sctab"><tr><td class="sk">英文名</td><td>Anker Innovations</td></tr><tr><td class="sk">别名</td><td>Anker、安克创新科技股份有限公司</td></tr><tr><td class="sk">创始人</td><td>Steven Yang</td></tr><tr><td class="sk">成立</td><td>2011</td></tr><tr><td class="sk">总部</td><td>Changsha</td></tr><tr><td class="sk">上市代码</td><td>300866.SZ（深交所创业板，2020年8月上市）</td></tr><tr><td class="sk">营收</td><td>2025年营收305.14亿元（同比+23.49%）</td></tr></table><div class="chips"><span class="sk">子品牌</span><span class="chip">Anker</span><span class="chip">eufy</span><span class="chip">soundcore</span></div></div><div class="grid"><div class="schemacard prod"><div class="sct">PowerCore <span class="ptag">产品系列</span></div><table class="sctab"><tr><td class="sk">品类</td><td>充电宝</td></tr><tr><td class="sk">技术</td><td>PowerIQ</td></tr><tr><td class="sk">价格</td><td><span class="gap">待补全</span></td></tr><tr><td class="sk">评分</td><td><span class="gap">待补全</span> <span class="muted">（待补全 条）</span></td></tr></table></div><div class="schemacard prod"><div class="sct">GaNPrime <span class="ptag">产品系列</span></div><table class="sctab"><tr><td class="sk">品类</td><td>充电器</td></tr><tr><td class="sk">技术</td><td>GaNPrime</td></tr><tr><td class="sk">价格</td><td><span class="gap">待补全</span></td></tr><tr><td class="sk">评分</td><td><span class="gap">待补全</span> <span class="muted">（待补全 条）</span></td></tr></table></div><div class="schemacard prod"><div class="sct">Anker Prime <span class="ptag">产品系列</span></div><table class="sctab"><tr><td class="sk">技术</td><td>PowerIQ</td></tr><tr><td class="sk">价格</td><td><span class="gap">待补全</span></td></tr><tr><td class="sk">评分</td><td><span class="gap">待补全</span> <span class="muted">（待补全 条）</span></td></tr></table></div><div class="schemacard prod"><div class="sct">MagGo <span class="ptag">产品系列</span></div><table class="sctab"><tr><td class="sk">品类</td><td>充电器</td></tr><tr><td class="sk">价格</td><td><span class="gap">待补全</span></td></tr><tr><td class="sk">评分</td><td><span class="gap">待补全</span> <span class="muted">（待补全 条）</span></td></tr></table></div><div class="schemacard prod"><div class="sct">PowerCore 26800 <span class="ptag">具体产品</span></div><table class="sctab"><tr><td class="sk">规格</td><td>容量 26800mAh</td></tr><tr><td class="sk">价格</td><td><span class="gap">待补全</span></td></tr><tr><td class="sk">评分</td><td><span class="gap">待补全</span> <span class="muted">（待补全 条）</span></td></tr></table></div><div class="schemacard prod"><div class="sct">Prime 160W Charger <span class="ptag">具体产品</span></div><table class="sctab"><tr><td class="sk">规格</td><td>功率 160W 多口</td></tr><tr><td class="sk">价格</td><td><span class="gap">待补全</span></td></tr><tr><td class="sk">评分</td><td><span class="gap">待补全</span> <span class="muted">（待补全 条）</span></td></tr></table></div><div class="schemacard prod"><div class="sct">Anker Nano <span class="ptag">具体产品</span></div><table class="sctab"><tr><td class="sk">规格</td><td>超小体积氮化镓</td></tr><tr><td class="sk">价格</td><td><span class="gap">待补全</span></td></tr><tr><td class="sk">评分</td><td><span class="gap">待补全</span> <span class="muted">（待补全 条）</span></td></tr></table></div></div><div class="awards"><span class="award">🏆 Red Dot Design Award · 红点设计奖</span></div></div>
+<details class="raw"><summary>查看原始 JSON-LD 代码</summary>
+<pre>{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "name": "Anker Innovations",
+      "alternateName": [
+        "Anker",
+        "安克创新科技股份有限公司"
+      ],
+      "url": "https://www.anker.com",
+      "founder": {
+        "@type": "Person",
+        "name": "Steven Yang"
+      },
+      "foundingDate": "2011",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Changsha"
+      },
+      "department": [
+        {
+          "@type": "Brand",
+          "name": "Anker",
+          "alternateName": "Anker(充电储能)"
+        },
+        {
+          "@type": "Brand",
+          "name": "eufy",
+          "alternateName": "eufy(智能创新)"
+        },
+        {
+          "@type": "Brand",
+          "name": "soundcore",
+          "alternateName": "声阔(智能影音)"
+        }
+      ],
+      "identifier": "300866.SZ（深交所创业板，2020年8月上市）",
+      "description": "2025年营收305.14亿元（同比+23.49%）"
+    },
+    {
+      "@type": "ProductModel",
+      "name": "PowerCore",
+      "brand": {
+        "@type": "Brand",
+        "name": "Anker"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "技术",
+          "value": "PowerIQ"
+        }
+      ],
+      "category": "充电宝",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "CNY",
+        "price": "待补全",
+        "availability": "https://schema.org/InStock"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "待补全",
+        "reviewCount": "待补全",
+        "note": "GEO 缺口：补全真实评分可显著提升 AI 引用概率"
+      }
+    },
+    {
+      "@type": "ProductModel",
+      "name": "GaNPrime",
+      "brand": {
+        "@type": "Brand",
+        "name": "Anker"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "技术",
+          "value": "GaNPrime"
+        }
+      ],
+      "category": "充电器",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "CNY",
+        "price": "待补全",
+        "availability": "https://schema.org/InStock"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "待补全",
+        "reviewCount": "待补全",
+        "note": "GEO 缺口：补全真实评分可显著提升 AI 引用概率"
+      }
+    },
+    {
+      "@type": "ProductModel",
+      "name": "Anker Prime",
+      "brand": {
+        "@type": "Brand",
+        "name": "Anker"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "技术",
+          "value": "PowerIQ"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "CNY",
+        "price": "待补全",
+        "availability": "https://schema.org/InStock"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "待补全",
+        "reviewCount": "待补全",
+        "note": "GEO 缺口：补全真实评分可显著提升 AI 引用概率"
+      }
+    },
+    {
+      "@type": "ProductModel",
+      "name": "MagGo",
+      "brand": {
+        "@type": "Brand",
+        "name": "Anker"
+      },
+      "category": "充电器",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "CNY",
+        "price": "待补全",
+        "availability": "https://schema.org/InStock"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "待补全",
+        "reviewCount": "待补全",
+        "note": "GEO 缺口：补全真实评分可显著提升 AI 引用概率"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "PowerCore 26800",
+      "brand": {
+        "@type": "Brand",
+        "name": "Anker"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "规格",
+          "value": "容量 26800mAh"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "CNY",
+        "price": "待补全",
+        "availability": "https://schema.org/InStock"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "待补全",
+        "reviewCount": "待补全",
+        "note": "GEO 缺口：补全真实评分可显著提升 AI 引用概率"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "Prime 160W Charger",
+      "brand": {
+        "@type": "Brand",
+        "name": "Anker"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "规格",
+          "value": "功率 160W 多口"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "CNY",
+        "price": "待补全",
+        "availability": "https://schema.org/InStock"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "待补全",
+        "reviewCount": "待补全",
+        "note": "GEO 缺口：补全真实评分可显著提升 AI 引用概率"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "Anker Nano",
+      "brand": {
+        "@type": "Brand",
+        "name": "Anker"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "规格",
+          "value": "超小体积氮化镓"
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "CNY",
+        "price": "待补全",
+        "availability": "https://schema.org/InStock"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "待补全",
+        "reviewCount": "待补全",
+        "note": "GEO 缺口：补全真实评分可显著提升 AI 引用概率"
+      }
+    },
+    {
+      "@type": "Award",
+      "name": "Red Dot Design Award",
+      "alternateName": "红点设计奖"
+    }
+  ]
+}</pre></details>
+<div class="note">该结构化数据让 AI 搜索引擎直接读取品牌权威信息、产品系列、规格与报价，是 GEO「被理解、被引用」的技术底座；红色「待补全」为 GEO 缺口（补全评分/价格可显著提升 AI 引用概率）。</div>
+</div>
+<div class="section"><h2>三、GEO 结构化完整度评分卡</h2>
+<table><thead><tr><th>检查维度</th><th>权重</th><th>状态</th><th>得分</th><th>说明</th></tr></thead>
+<tbody><tr><td>品牌权威身份</td><td class="num">12</td><td style="color:#16a34a;font-weight:600">✓ 已覆盖</td><td class="num">12.0</td><td>Organization + Brand 实体已建</td></tr><tr><td>创始人与成立信息</td><td class="num">8</td><td style="color:#16a34a;font-weight:600">✓ 已覆盖</td><td class="num">8.0</td><td>founder + foundingDate(2011) 已结构化</td></tr><tr><td>总部与上市信息</td><td class="num">8</td><td style="color:#16a34a;font-weight:600">✓ 已覆盖</td><td class="num">8.0</td><td>总部 + 股票代码(300866.SZ) 已结构化</td></tr><tr><td>产品线实体化</td><td class="num">12</td><td style="color:#16a34a;font-weight:600">✓ 已覆盖</td><td class="num">12.0</td><td>已实体化 4 个产品系列</td></tr><tr><td>品类归属</td><td class="num">8</td><td style="color:#16a34a;font-weight:600">✓ 已覆盖</td><td class="num">8.0</td><td>ProductModel→ProductCategory 关系已建</td></tr><tr><td>技术/特性实体化</td><td class="num">8</td><td style="color:#16a34a;font-weight:600">✓ 已覆盖</td><td class="num">8.0</td><td>命名技术(GaNPrime/PowerIQ)已实体化</td></tr><tr><td>具体 SKU + 规格</td><td class="num">12</td><td style="color:#16a34a;font-weight:600">✓ 已覆盖</td><td class="num">12.0</td><td>具体 SKU + 规格属性已结构化</td></tr><tr><td>价格/报价</td><td class="num">10</td><td style="color:#ca8a04;font-weight:600">◐ 部分</td><td class="num">5.0</td><td>schema.org 已含 Offer 模板，但真实售价缺失 → 待补全</td></tr><tr><td>评分/口碑</td><td class="num">8</td><td style="color:#dc2626;font-weight:600">✗ 缺失</td><td class="num">0.0</td><td>缺失 AggregateRating（口碑信号），AI 常引用 → 建议补全</td></tr><tr><td>奖项/认证</td><td class="num">5</td><td style="color:#16a34a;font-weight:600">✓ 已覆盖</td><td class="num">5.0</td><td>Award(红点奖) 实体 + wonAward 关系已建</td></tr><tr><td>市场/渠道</td><td class="num">5</td><td style="color:#16a34a;font-weight:600">✓ 已覆盖</td><td class="num">5.0</td><td>Market(北美/欧洲) + sellsIn 已结构化</td></tr><tr><td>竞品关联</td><td class="num">7</td><td style="color:#16a34a;font-weight:600">✓ 已覆盖</td><td class="num">7.0</td><td>competesWith 竞品关联已建</td></tr><tr><td>使用场景/FAQ</td><td class="num">7</td><td style="color:#dc2626;font-weight:600">✗ 缺失</td><td class="num">0.0</td><td>缺失使用场景/FAQ 实体，无法覆盖追问意图 → 建议补全</td></tr></tbody></table>
+<div class="note">评分逻辑：覆盖=满分，部分=半分，缺失=0 分；综合 = Σ(维度得分) / Σ(权重) × 100。这是「AI 可读性」的量化指标，分数越高越易被引用。</div>
+</div>
+<div class="section"><h2>四、GEO 优化建议（按严重度）</h2>
+<div class="rec"><span class="sev" style="background:#dc2626">高</span><div><b>价格/报价</b>（权重 10）<br><span class="muted">Offer 实体含 priceCurrency + price + availability</span></div></div><div class="rec"><span class="sev" style="background:#ca8a04">中</span><div><b>评分/口碑</b>（权重 8）<br><span class="muted">AggregateRating(评分/评测数)，AI 常引用口碑信号</span></div></div><div class="rec"><span class="sev" style="background:#ca8a04">中</span><div><b>使用场景/FAQ</b>（权重 7）<br><span class="muted">使用场景与常见问答实体，覆盖追问意图</span></div></div>
+<div class="note">补齐上述缺口即可把 schema.org 与知识图谱补全，配合项目 1-4（可见度监测 / 内容评分 / 问题库 / 竞品对标）形成「被理解→被引用→被推荐」的完整 GEO 闭环。</div>
+</div>
+</body></html>
